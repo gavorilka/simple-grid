@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.grid-container {
+    display: grid;
+    gap: 5px;
+    grid-template: 100px repeat(2, minmax(200px,1fr)) 150px / repeat(3, 1fr);
+    grid-template-areas: 
+    "header header header"
+    "b b b"
+    "b b b"
+    ". footer ad";
+}
+header {
+    grid-area: footer;
+    background: red;
+}
+main {
+    grid-area: b;
+    background: blueviolet;
+}
+aside {
+    background: pink;
+    grid-area: ad;
+}
+footer {
+    background: black;
+    grid-area: header;
+}
+.grid-container div{
+    background-color: aqua;
+}
