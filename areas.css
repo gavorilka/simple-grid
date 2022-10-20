@@ -29,6 +29,6 @@ footer {
     background: black;
     grid-area: header;
 }
-.grid-container div{
+.grid-container>div{
     background-color: aqua;
 }
